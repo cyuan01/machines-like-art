@@ -1,3 +1,6 @@
+
+
+
 <!--C.Yuan 2019
 	index.html
 
@@ -31,10 +34,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
 
 	<!--my CSS-->
-	<link rel="stylesheet" href="../assets/css/style.css"/>
+	<link rel="stylesheet" href="./assets/css/style.css"/>
 
 	<!--JS Scripts-->
-	<script src="../js/script_MET.js"></script>
+	<script src="./js/script_AGO.js"></script>
 
 	<!--plotly Library-->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -61,16 +64,16 @@
 	<nav class="navbar navbar-expand-sm navbar-default">
 		<ul class="navbar-nav">
 			<li class="nav-item home_tab">
-		      	<a class="nav-link" href="../index.html">About</a>
+		      	<a class="nav-link" href="index.html">About</a>
 		    </li>
 		    <li class="nav-item mia_tab">
 		      	<a class="nav-link" href="MIA.html">Minneapolis Institute of Art</a>
 		    </li>
 		    <li class="nav-item met_tab">
-		      	<a class="nav-link" href="MET.html" style ="color:black">The Metropolitan Museum of Art</a>
+		      	<a class="nav-link" href="MET.html">The Metropolitan Museum of Art</a>
 		    </li>
 		    <li class="nav-item ago_tab">
-		      	<a class="nav-link" href="AGO.html">Art Gallery of Ontario</a>
+		      	<a class="nav-link" href="AGO.html" style ="color:black;">Art Gallery of Ontario</a>
 		    </li>
 		    <li class="nav-item">
 		      	<a class="nav-link" href="PMA.html">Philadelphia Museum of Art</a>
@@ -85,191 +88,131 @@
 
 	</div>
 
+	<section id = "gallery_anchor"></section>
+
 
 	<div class = "gallery">
 
 		<div class = "container">
 
-			<div class = "row painting_info">
-				<section id = "gallery_anchor"></section>
-
-				<div class = "row painting_img">
-					<div class = "col-md-6">
-						<img src = "../assets/images/MET_art/0.jpg">
-					</div>
-					<div class = "col-md-6">
-			
-
-						<div class = "alt_tags">
-							<h1>Bowl with The Virgin and the Unicorn and arms of Matthias Corvinus and Beatrice of Aragon</h1>
-							<h3>Italian, Pesaro</h3>
-						</div>
-
-					</div>
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "./assets/images/AGO_art/0.jpg">
 				</div>
+				<div class = "col-md-6">
+		
+					<div class = "alt_tags">
+						<h1>Jar of Apricots</h1>
+						<h3>Jean-Baptiste-Siméon Chardin</h3>
+					</div>
 
-				<div class = "row painting_tags">
+					<!-- <canvas id = "0_pie"></canvas> -->
 
-					<div class = "col-md-2 tags">
+					<div class = "tags">
+
+
 						<h3>Clarifai</h3>
 						<div id = "Clarifai_0"></div>
-					</div>
-
-					<div class = "col-md-2 tags">
 						<h3>CloudSight</h3>
-						<div id = "CloudSight_0"></div>	
+						<div id = "CloudSight_0"></div>
 						<h3>CloudSight Hybrid</h3>
-						<div id = "CloudSight_Hybrid_0"></div>					
-					</div>
-
-
-					<div class = "col-md-2 tags">
+						<div id = "CloudSight_Hybrid_0"></div>
 						<h3>Google Vision</h3>
-						<div id = "Google_Vision_0"></div>					
-					</div>
-
-					<div class = "col-md-2 tags">
+						<div id = "Google_Vision_0"></div>
 						<h3>Amazon Rekognition</h3>
 						<div id = "Amazon_Rekognition_0"></div>
-					</div>
-
-					<div class = "col-md-2 tags">
 						<h3>IBM Visual Recognition</h3>
 						<div id = "IBM_Visual_Recognition_0"></div>
-					</div>
-
-					<div class = "col-md-2 tags">
 						<h3>Microsoft Computer Vision</h3>
 						<div id = "Microsoft_Computer_Vision_0"></div>
+
 					</div>
 
-				</div>
 
+				</div>
 			</div>
 
-
-			<div class = "row painting_info">
-				
-
-				<div class = "row painting_img">
-					<div class = "col-md-6">
-						<img src = "../assets/images/MET_art/1.jpg">
-					</div>
-					<div class = "col-md-6">
-			
-
-						<div class = "alt_tags">
-							<h1>Zoe, Maid of Athens</h1>
-							<h3>Julia Margaret Cameron</h3>
-						</div>
-
-					</div>
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "./assets/images/AGO_art/1.jpg">
 				</div>
 
-				<div class = "row painting_tags">
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Brand New Paint Job (Richter Waiting Room)</h1>
+						<h3>Jon Rafman</h3>
+					</div>
+					<!-- <canvas id = "1_pie"></canvas> -->
+					<div class = "tags">
 
-					<div class = "col-md-2 tags">
 						<h3>Clarifai</h3>
 						<div id = "Clarifai_1"></div>
-					</div>
-
-					<div class = "col-md-2 tags">
 						<h3>CloudSight</h3>
-						<div id = "CloudSight_1"></div>	
+						<div id = "CloudSight_1"></div>
 						<h3>CloudSight Hybrid</h3>
-						<div id = "CloudSight_Hybrid_1"></div>					
-					</div>
-
-					<div class = "col-md-2 tags">
+						<div id = "CloudSight_Hybrid_1"></div>						
 						<h3>Google Vision</h3>
-						<div id = "Google_Vision_1"></div>					
-					</div>
-
-					<div class = "col-md-2 tags">
+						<div id = "Google_Vision_1"></div>
 						<h3>Amazon Rekognition</h3>
 						<div id = "Amazon_Rekognition_1"></div>
-					</div>
-
-					<div class = "col-md-2 tags">
 						<h3>IBM Visual Recognition</h3>
 						<div id = "IBM_Visual_Recognition_1"></div>
-					</div>
-
-					<div class = "col-md-2 tags">
 						<h3>Microsoft Computer Vision</h3>
-						<div id = "Microsoft_Computer_Vision_1"></div>
-					</div>
+						<div id = "Microsoft_Computer_Vision_1"></div>	
 
+					</div>					
+					
 				</div>
-
 			</div>
-
 		
-			<div class = "row painting_info">
-				
+		
 
-				<div class = "row painting_img">
-					<div class = "col-md-6">
-						<img src = "../assets/images/MET_art/2.jpg">
-					</div>
-					<div class = "col-md-6">
-			
-
-						<div class = "alt_tags">
-							<h1>Wisconsin Landscape</h1>
-							<h3>John Steuart Curry</h3>
-						</div>
-
-					</div>
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "./assets/images/AGO_art/2.jpg">
 				</div>
 
-				<div class = "row painting_tags">
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>The Marchesa Casati</h1>
+						<h3>Augustus John</h3>
+					</div>
+					<!-- <canvas id = "2_pie"></canvas> -->
 
-					<div class = "col-md-2 tags">
+					<div class = "tags">
+
+					
+
 						<h3>Clarifai</h3>
 						<div id = "Clarifai_2"></div>
-					</div>
-
-					<div class = "col-md-2 tags">
 						<h3>CloudSight</h3>
 						<div id = "CloudSight_2"></div>
 						<h3>CloudSight Hybrid</h3>
-						<div id = "CloudSight_Hybrid_2"></div>						
-					</div>
-
-					<div class = "col-md-2 tags">
+						<div id = "CloudSight_Hybrid_2"></div>
 						<h3>Google Vision</h3>
-						<div id = "Google_Vision_2"></div>					
-					</div>
-
-					<div class = "col-md-2 tags">
+						<div id = "Google_Vision_2"></div>
 						<h3>Amazon Rekognition</h3>
 						<div id = "Amazon_Rekognition_2"></div>
-					</div>
-
-					<div class = "col-md-2 tags">
 						<h3>IBM Visual Recognition</h3>
 						<div id = "IBM_Visual_Recognition_2"></div>
-					</div>
-
-					<div class = "col-md-2 tags">
 						<h3>Microsoft Computer Vision</h3>
 						<div id = "Microsoft_Computer_Vision_2"></div>
+
 					</div>
 
 				</div>
-
 			</div>
 				
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/3.jpg">
+					<img src = "./assets/images/AGO_art/3.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Tile with Floral and Cloud-band Design</h1>
+						<h1>"Gunstock" Club</h1>
+						<h3>Anishnabe, Ojibway, Western Great Lakes, Canada</h3>
 
 					</div>		
 					<!-- <canvas id = "3_pie"></canvas>		 -->	
@@ -298,13 +241,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/4.jpg">
+					<img src = "./assets/images/AGO_art/4.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>A Knight of the d'Aluye Family</h1>
-						<h3>French</h3>
+						<h1>Autumn Hillside</h1>
+						<h3>Franklin Carmichael</h3>
 					</div>			
 					<!-- <canvas id = "4_pie"></canvas>	 -->	
 					<div class = "tags">
@@ -331,14 +274,14 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/5.jpg">
+					<img src = "./assets/images/AGO_art/5.jpg">
 				</div>
 				<!-- <canvas id = "5_pie"></canvas> -->
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>The Head of the Virgin in Three-Quarter View Facing Right</h1>	
-						<h3>Leonardo da Vinci</h3>					
+						<h1>Upward Trend</h1>
+						<h3>Emily Carr</h3>						
 					</div>
 
 					<div class = "tags">
@@ -365,14 +308,14 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/6.jpg">
+					<img src = "./assets/images/AGO_art/6.jpg">
 				</div>
 				<!-- <canvas id = "5_pie"></canvas> -->
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>The New Zealanders</h1>
-						<h3>George French Angas</h3>						
+						<h1>Interior of a forest</h1>
+						<h3>Paul Cézanne</h3>						
 					</div>
 
 					<div class = "tags">
@@ -400,13 +343,14 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/7.jpg">
+					<img src = "./assets/images/AGO_art/7.jpg">
 				</div>
 				<!-- <canvas id = "5_pie"></canvas> -->
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Statue of a goddess, probably Nehemetaui or Nebethetepet</h1>						
+						<h1>Helga Matura</h1>
+						<h3>Gerhard Richter</h3>						
 					</div>
 
 					<div class = "tags">
@@ -432,13 +376,14 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/8.jpg">
+					<img src = "./assets/images/AGO_art/8.jpg">
 				</div>
 				<!-- <canvas id = "5_pie"></canvas> -->
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Ensemble</h1>						
+						<h1>Ariadne</h1>
+						<h3>Edward Burne-Jones</h3>						
 					</div>
 
 					<div class = "tags">
@@ -465,12 +410,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/9.jpg">
+					<img src = "./assets/images/AGO_art/9.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Haremhab as a Scribe of the King</h1>						
+						<h1>Sea Captain Figure</h1>
+						<h3>Haida, Queen Charlotte Islands, British Columbia</h3>						
 					</div>
 
 					<div class = "tags">
@@ -497,13 +443,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/10.jpg">
+					<img src = "./assets/images/AGO_art/10.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Tapestry with Dragons and Flowers</h1>		
-						<h3>Eastern Central Asia</h3>				
+						<h1>Interesting Story</h1>
+						<h3>Laura Muntz Lyall</h3>						
 					</div>
 
 					<div class = "tags">
@@ -531,13 +477,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/11.jpg">
+					<img src = "./assets/images/AGO_art/11.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Portrait of the Painter</h1>	
-						<h3>John La Farge</h3>					
+						<h1>The West Wind</h1>
+						<h3>Tom Thomson</h3>						
 					</div>
 
 					<div class = "tags">
@@ -564,13 +510,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/12.jpg">
+					<img src = "./assets/images/AGO_art/12.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Aquamanile in the Form of a Lion</h1>	
-						<h3>German</h3>					
+						<h1>Blue Reflections</h1>
+						<h3>Kazuo Nakamura</h3>						
 					</div>
 
 					<div class = "tags">
@@ -597,13 +543,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/13.jpg">
+					<img src = "./assets/images/AGO_art/13.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Pair of Flintlock Pistols of Empress Catherine the Great</h1>	
-						<h3>Johan Adolph Grecke</h3>					
+						<h1>Brand New Paint Job (Cézanne Train Car)</h1>
+						<h3>Jon Rafman</h3>						
 					</div>
 
 					<div class = "tags">
@@ -630,12 +576,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/14.jpg">
+					<img src = "./assets/images/AGO_art/14.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Brazier of Sultan al-Malik al-Muzaffar Shams al-Din Yusuf ibn 'Umar</h1>						
+						<h1>Pope Gregory XV</h1>		
+						<h3>Gian Lorenzo Bernini</h3>				
 					</div>
 
 					<div class = "tags">
@@ -663,13 +610,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/15.jpg">
+					<img src = "./assets/images/AGO_art/15.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Piazza San Marco</h1>
-						<h3>Canaletto (Giovanni Antonio Canal)</h3>						
+						<h1>The Mass of St. Gregory</h1>
+						<h3>Simon Marmion</h3>						
 					</div>
 
 					<div class = "tags">
@@ -699,13 +646,12 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/16.jpg">
+					<img src = "./assets/images/AGO_art/16.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>The Lovers</h1>
-						<h3>Riza-yi `Abbasi</h3>				
+						<h1>Male Mask</h1>						
 					</div>
 
 					<div class = "tags">
@@ -734,13 +680,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/17.jpg">
+					<img src = "./assets/images/AGO_art/17.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Small desk with folding top (bureau brisé)</h1>	
-						<h3>Alexandre-Jean Oppenordt</h3>					
+						<h1>A Study in Greys</h1>	
+						<h3>Mary Hiester Reid</h3>					
 					</div>
 
 					<div class = "tags">
@@ -769,13 +715,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/18.jpg">
+					<img src = "./assets/images/AGO_art/18.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Wine urn</h1>
-						<h3>Probably Boston & Sandwich Glass Company</h3>						
+						<h1>Les Sabots</h1>		
+						<h3>François Boucher</h3>				
 					</div>
 
 					<div class = "tags">
@@ -804,13 +750,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/19.jpg">
+					<img src = "./assets/images/AGO_art/19.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>"Fortissimo"</h1>	
-						<h3>Séraphin Soudbinine</h3>					
+						<h1>Art Gallery of Ontario: Toronto; View from Grange Park</h1>
+						<h3>Edward Burtynsky</h3>						
 					</div>
 
 					<div class = "tags">
@@ -838,13 +784,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/20.jpg">
+					<img src = "./assets/images/AGO_art/20.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Wine Ewer with Design of Chrysanthemums and Paulownia Crests in Alternating Fields</h1>		
-						<h3>Japan</h3>				
+						<h1>Indian Church</h1>
+						<h3>Emily Carr</h3>						
 					</div>
 
 					<div class = "tags">
@@ -870,13 +816,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/21.jpg">
+					<img src = "./assets/images/AGO_art/21.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Madonna and Child Enthroned with Saints</h1>
-						<h3>Raphael (Raffaello Sanzio or Santi)</h3>						
+						<h1>Interior</h1>
+						<h3>Helen McNicoll</h3>						
 					</div>
 
 					<div class = "tags">
@@ -903,13 +849,12 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/22.jpg">
+					<img src = "./assets/images/AGO_art/22.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Viola d'Amore</h1>	
-						<h3>Giovanni Grancino</h3>					
+						<h1>Large Head of a Jester</h1>						
 					</div>
 
 					<div class = "tags">
@@ -935,13 +880,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/23.jpg">
+					<img src = "./assets/images/AGO_art/23.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Lady Lilith</h1>
-						<h3>Dante Gabriel Rossetti</h3>						
+						<h1>The Crucified Christ (Corpus)</h1>	
+						<h3>Gian Lorenzo Bernini</h3>					
 					</div>
 
 					<div class = "tags">
@@ -968,12 +913,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/24.jpg">
+					<img src = "./assets/images/AGO_art/24.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>"Jonah and the Whale", Folio from a Jami al-Tavarikh (Compendium of Chronicles)</h1>						
+						<h1>Daedalus and Icarus</h1>
+						<h3>Anthony van Dyck</h3>						
 					</div>
 
 					<div class = "tags">
@@ -1000,13 +946,13 @@
 
 			<div class = "row painting">
 				<div class = "col-md-6">
-					<img src = "../assets/images/MET_art/25.jpg">
+					<img src = "./assets/images/AGO_art/25.jpg">
 				</div>
 
 				<div class = "col-md-6">
 					<div class = "alt_tags">
-						<h1>Boys in a Dory</h1>
-						<h3>Winslow Homer</h3>						
+						<h1>Helmet Mask</h1>
+						<h3>Ejagham peoples, Nigeria</h3>						
 					</div>
 
 					<div class = "tags">
@@ -1028,6 +974,131 @@
 					</div>
 				</div>
 			</div>
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "./assets/images/AGO_art/26.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Massacre of the Innocents</h1>	
+						<h3>Peter Paul Rubens</h3>					
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_26"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_26"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_26"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_26"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_26"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_26"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_26"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "./assets/images/AGO_art/27.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>The Morning after a Merrymaking in Lower Canada</h1>
+						<h3>Cornelius Krieghoff</h3>					
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_27"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_27"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_27"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_27"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_27"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_27"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_27"></div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "./assets/images/AGO_art/28.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Scene in Venice</h1>
+						<h3>James Wilson Morrice</h3>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_28"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_28"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_28"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_28"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_28"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_28"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_28"></div>
+					</div>
+				</div>
+			</div>
+
+
+<!-- 			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "./assets/images/AGO_art/29.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Untitled</h1>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_29"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_29"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_29"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_29"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_29"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_29"></div>
+					</div>
+				</div>
+			</div>			 -->
+
 
 		</div>
 
