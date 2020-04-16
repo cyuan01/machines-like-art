@@ -1,0 +1,72 @@
+.gallery{
+
+}
+
+.painting img{
+	width: 100%;
+	transition: 0.5s;
+}
+
+.painting img:hover{
+	opacity: 0.6;
+	transition: 0.5s;
+}
+
+.row {
+	margin: 100px 0;
+}
+
+.col-md-8 {
+/*	margin: 0 0;
+	padding: 0 0;*/
+/*	margin-left: 0;
+	margin-right: 0;*/
+}
+
+.tags {
+	margin-left: 0px;
+}
+
+.pie {
+
+}
+
+#0, #5 {
+}
+
+
+/******************************************/
+ /************ footer styling **************/
+ /******************************************/
+
+ .page-footer {
+  padding: 4% 0;
+  background-color: black;
+  color: grey;
+}
+
+.foot a {
+	color: grey;
+}
+
+.foot a:hover {
+	color: white;
+}
+
+.banner_foot {
+	background-image: linear-gradient(to bottom right, #4b8d94, #0a1621);
+	position: relative;
+	color: white;
+
+}
+
+.title_foot h1{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	text-align: center;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+

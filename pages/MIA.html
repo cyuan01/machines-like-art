@@ -1,0 +1,998 @@
+<!--C.Yuan 2019
+	index.html
+
+	HTML for Cuseum Digital Membership Calculator
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Machines like art</title>
+
+	<!--SEO stuff-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!--Social Media Handling-->
+	
+
+	<meta charset="utf-8">
+
+	<!--viewport handling-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Jquery Library-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!--Bootstrap Library-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   	 <!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+
+	<!--my CSS-->
+	<link rel="stylesheet" href="../assets/css/style.css"/>
+
+	<!--JS Scripts-->
+	<script src="../js/script_MIA.js"></script>
+
+	<!--plotly Library-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,700,800|Roboto:400,700&display=swap" rel="stylesheet">
+
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes"></script>
+
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm navbar-default">
+		<ul class="navbar-nav">
+			<li class="nav-item home_tab">
+		      	<a class="nav-link" href="index.html">About</a>
+		    </li>
+		    <li class="nav-item mia_tab">
+		      	<a class="nav-link" href="MIA.html" style ="color:black;" >Minneapolis Institute of Art</a>
+		    </li>
+		    <li class="nav-item met_tab">
+		      	<a class="nav-link" href="MET.html">The Metropolitan Museum of Art</a>
+		    </li>
+		    <li class="nav-item ago_tab">
+		      	<a class="nav-link" href="AGO.html">Art Gallery of Ontario</a>
+		    </li>
+		    <li class="nav-item">
+		      	<a class="nav-link" href="PMA.html">Philadelphia Museum of Art</a>
+		    </li>	
+		</ul>
+	</nav>
+
+
+	<div class = "banner">
+
+		<a href="#gallery_anchor" class="btn" id = "view_gallery_button" role="button">View the Gallery</a>
+
+	</div>
+
+	<section id = "gallery_anchor"></section>
+
+
+
+	<div class = "gallery">
+
+		<div class = "container">
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/0.jpg">
+				</div>
+				<div class = "col-md-6">
+		
+					<div class = "alt_tags">
+						<h1>The Doryphoros</h1>
+					</div>
+
+					<!-- <canvas id = "0_pie"></canvas> -->
+
+					<div class = "tags">
+
+
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_0"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_0"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_0"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_0"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_0"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_0"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_0"></div>
+
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/1.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Shrine head</h1>
+						<h3>Yoruba</h3>
+					</div>
+					<!-- <canvas id = "1_pie"></canvas> -->
+					<div class = "tags">
+
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_1"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_1"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_1"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_1"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_1"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_1"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_1"></div>	
+
+					</div>					
+					
+				</div>
+			</div>
+		
+		
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/2.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Frank</h1>
+						<h3>Chuck Close</h3>
+					</div>
+					<!-- <canvas id = "2_pie"></canvas> -->
+
+					<div class = "tags">
+
+					
+
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_2"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_2"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_2"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_2"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_2"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_2"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_2"></div>
+
+					</div>
+
+				</div>
+			</div>
+				
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/3.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>The Coaci Inkstand</h1>
+						<h3>Vincenzo Coaci</h3>
+
+					</div>		
+					<!-- <canvas id = "3_pie"></canvas>		 -->	
+					<div class = "tags">
+
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_3"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_3"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_3"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_3"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_3"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_3"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_3"></div>	
+
+					</div>				
+
+				</div>
+			</div>		
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/4.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Lucretia</h1>
+						<h3>Rembrandt Harmensz. van Rijn</h3>
+					</div>			
+					<!-- <canvas id = "4_pie"></canvas>	 -->	
+					<div class = "tags">
+
+
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_4"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_4"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_4"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_4"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_4"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_4"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_4"></div>	
+
+					</div>			
+				</div>
+			</div>
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/5.jpg">
+				</div>
+				<!-- <canvas id = "5_pie"></canvas> -->
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Jade Mountain Illustrating the Gathering of Scholars at the Lanting Pavilion</h1>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_5"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_5"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_5"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_5"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_5"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_5"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_5"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/6.jpg">
+				</div>
+				<!-- <canvas id = "5_pie"></canvas> -->
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Self-Portrait with Dr. Arrieta</h1>
+						<h3>Francisco José de Goya y Lucientes</h3>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_6"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_6"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_6"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_6"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_6"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_6"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_6"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/7.jpg">
+				</div>
+				<!-- <canvas id = "5_pie"></canvas> -->
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Olive Trees</h1>
+						<h3>Vincent van Gogh</h3>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_7"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_7"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_7"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_7"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_7"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_7"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_7"></div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/8.jpg">
+				</div>
+				<!-- <canvas id = "5_pie"></canvas> -->
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Warrior with Shield</h1>	
+						<h3>Henry Moore</h3>					
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_8"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_8"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_8"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_8"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_8"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_8"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_8"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/9.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Blind Man's Buff</h1>
+						<h3>Max Beckman</h3>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_9"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_9"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_9"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_9"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_9"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_9"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_9"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/10.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>The Death of Germanicus</h1>
+						<h3>Nicolas Poussin</h3>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_10"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_10"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_10"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_10"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_10"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_10"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_10"></div>
+					</div>
+				</div>
+			</div>			
+
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/11.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Ganymede and the Eagle</h1>	
+						<h3>Bertel Thorvaldsen</h3>					
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_11"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_11"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_11"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_11"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_11"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_11"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_11"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/12.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Celestial Horse</h1>
+
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_12"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_12"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_12"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_12"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_12"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_12"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_12"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/13.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Christ Driving the Money Changers from the Temple</h1>	
+						<h3>El Greco (Domenikos Theotokopoulos)</h3>					
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_13"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_13"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_13"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_13"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_13"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_13"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_13"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/14.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Study for Portrait VI</h1>
+						<h3>Francis Bacon</h3>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_14"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_14"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_14"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_14"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_14"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_14"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_14"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/15.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Seated Avalokiteshvara Boddhisattva (Guanyin)</h1>
+
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_15"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_15"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_15"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_15"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_15"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_15"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_15"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/16.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Equestrian figure</h1>
+						<h3>Djenne</h3>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_16"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_16"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_16"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_16"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_16"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_16"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_16"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/17.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Yogini with a jar</h1>
+
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_17"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_17"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_17"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_17"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_17"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_17"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_17"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/18.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Masterpiece cup and cover</h1>
+						<h3>Johann Friedrich Baere</h3>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_18"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_18"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_18"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_18"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_18"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_18"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_18"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/19.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Writing desk</h1>
+						<h3>Attributed to William Howard</h3>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_19"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_19"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_19"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_19"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_19"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_19"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_19"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/20.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Pier table</h1>	
+						<h3>Giovanni Battista Piranesi</h3>					
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_20"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_20"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_20"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_20"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_20"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_20"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_20"></div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/21.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Daiitoku Myōō, the Wisdom King of Awe-Inspiring Power</h1>
+
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_21"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_21"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_21"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_21"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_21"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_21"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_21"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/22.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Some/One</h1>
+						<h3>Do Ho Suh</h3>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_22"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_22"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_22"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_22"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_22"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_22"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_22"></div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/23.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Red-and-blue-laced Suit of Armor from the Kii Tokugawa Family</h1>						
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_23"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_23"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_23"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_23"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_23"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_23"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_23"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/24.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Three Bathers</h1>	
+						<h3>Henri Matisse</h3>					
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_24"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_24"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_24"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_24"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_24"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_24"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_24"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class = "row painting">
+				<div class = "col-md-6">
+					<img src = "../assets/images/MIA_art/25.jpg">
+				</div>
+
+				<div class = "col-md-6">
+					<div class = "alt_tags">
+						<h1>Hunting Coat</h1>	
+						<h3>Innu (Naskapi)</h3>					
+					</div>
+
+					<div class = "tags">
+					
+						<h3>Clarifai</h3>
+						<div id = "Clarifai_25"></div>
+						<h3>CloudSight</h3>
+						<div id = "CloudSight_25"></div>
+						<h3>CloudSight Hybrid</h3>
+						<div id = "CloudSight_Hybrid_25"></div>
+						<h3>Google Vision</h3>
+						<div id = "Google_Vision_25"></div>
+						<h3>Amazon Rekognition</h3>
+						<div id = "Amazon_Rekognition_25"></div>
+						<h3>IBM Visual Recognition</h3>
+						<div id = "IBM_Visual_Recognition_25"></div>
+						<h3>Microsoft Computer Vision</h3>
+						<div id = "Microsoft_Computer_Vision_25"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+<footer class="page-footer">
+
+	<div class="container">
+
+		   	<div class="col-md-12 foot">
+
+		   		<p>© 2018 Cuseum, Inc. <a href="https://cuseum.com/terms-of-service" target = "_blank">Terms</a> | <a href="https://cuseum.com/privacy-policy" target = "_blank">Privacy Policy</a> | <a href="https://cuseum.com/security" target = "_blank">Security</a><p>
+		
+			</div>
+
+	</div>
+</footer>
+
+</html>

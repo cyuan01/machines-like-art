@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/********************************************/
+/************** navbar styling **************/
+
+.navbar a {
+  	
+  	font-size: 20px;
+  	color: white;
+  	font-weight: bolder;
+    transition: .4s ease;
+}
+
+.navbar li:hover {
+	opacity: 0.5;
+    transition: .4s ease;
+}
+
+.navbar a:hover {
+    transition: .4s ease;
+    color: black;
+}
+
+.navbar li {
+    padding: 20px 20px;
+    transition: .4s ease;
+}
+.navbar-default {
+  	width: 100%;
+  	background-color:#c2c2c2;
+    
+  	padding-top: 0;
+  	margin-top: 0;
+  	margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+/*  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;*/
+ }
+
+ .navbar-custom {
+  	background-color: white;
+  	color:black;
+ }
+
+ .drop_custom {
+  background-color: white;
+ }
+
+/*.home_tab {
+  background-color: black
+}
+
+.mia_tab {
+	background-color: #fabc60;
+    background-color: black
+}
+
+.ago_tab {
+	background-color: #0076c4;
+    background-color: black
+}
+
+.met_tab {
+	background-color: #e32a00;
+    background-color: black
+}*/
+
+ /********************************************/
+
+body {
+  /*background-image: linear-gradient(white, white, #4b8d94);*/
+}
+
+
+ .banner img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+ }
+
+.banner h1 {
+  font-weight: bolder;
+  text-align: center;
+  padding: 5% 0;
+  font-size: 60px;
+}
+
+.about_body h2, .about_body p {
+ padding: 10px 10%;
+}
+
+.about_body h2 {
+  font-weight: bolder
+}
+
+.row {
+  padding: 5% 0;
+}
+
+.about_body {
+  padding: 5% 0;
+}
+/******************************************/
+ /************ footer styling **************/
+ /******************************************/
+
+
+ .page-footer {
+  background-color: black;
+  color: grey;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 25px;
+}
+
+.foot a {
+	color: grey;
+}
+
+.foot a:hover {
+	color: white;
+}
+
+.banner_foot {
+	background-image: linear-gradient(to bottom right, #4b8d94, #0a1621);
+	position: relative;
+	color: white;
+
+}
+
+.title_foot h1{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	text-align: center;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
